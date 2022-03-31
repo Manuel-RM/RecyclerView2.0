@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Example of song"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivSmartphone"
+        android:layout_width="13dp"
+        android:layout_height="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSong"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tvAutor"
+        android:layout_marginVertical="8dp"
+        />
+
+    <TextView
+        android:id="@+id/tvAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Autor"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSong"
+        app:layout_constraintLeft_toRightOf="@id/ivSmartphone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/Guion"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="8dp"
+        />
+
+    <TextView
+        android:id="@+id/Guion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tvAutor"
+        app:layout_constraintRight_toLeftOf="@id/tvDisco"
+        app:layout_constraintTop_toBottomOf="@id/tvSong"
+        />
+
+    <TextView
+        android:id="@+id/tvDisco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Disco_Name"
+        app:layout_constraintLeft_toRightOf="@id/Guion"
+        app:layout_constraintTop_toBottomOf="@id/tvSong"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color1"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
